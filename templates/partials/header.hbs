@@ -1,0 +1,32 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid navbar-wrapper">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#article-tags">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">
+                <img class="center-block" id="top-logo" src="/assets/images/logo.jpg"  alt="logo"/>
+            </a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="article-tags">
+            <ul class="nav navbar-nav">
+                {{#if tagName}}
+                    <li role="presentation"><a href="{{contents.index.url}}">所有文章</a></li>
+                {{else}}
+                    <li role="presentation" class="active"><a href="{{contents.index.url}}">所有文章</a></li>
+                {{/if}}
+
+                {{{getAllTags env tagName}}}
+
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="metabar-margin">
+
+</div>
+

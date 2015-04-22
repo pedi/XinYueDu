@@ -1,0 +1,58 @@
+/**
+ * Imports
+ */
+
+@import "beveled-corners";
+
+/**
+ * Mixin usage
+ */
+
+// The CSS gradient using method
+.module--corner-bevel-new {
+    @include corner-bevel-new(#ddd, 20px, 20px, 20px, 20px);
+    margin-bottom: 20px;
+    padding: 30px;
+}
+
+// IE9 supporting method
+.module--corner-bevel-old {
+    @include corner-bevel-old(Pink, 30px);
+    margin-bottom: 20px;
+    padding: 0 30px;
+}
+
+// IE8 supporting method
+.module--corner-bevel-veryold {
+    @include corner-bevel-veryold(LightGreen, 30px);
+    margin-top: 50px;
+    padding: 0 30px;
+}
+
+/**
+ * Other styling
+ */
+
+// The stuff inside the beveled 
+p {
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+/**
+ * Reset crap, ignore
+ */
+
+* {
+    box-sizing: border-box;
+}
+body {
+    padding: 20px;
+    margin: 0 auto;
+    width: 900px;
+}
+h1,
+p {
+    margin: 0 0 20px 0;
+}

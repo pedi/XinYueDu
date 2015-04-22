@@ -1,0 +1,74 @@
+
+
+
+
+.articles-grid {
+  article:first-child {
+    margin-top : 1em;
+    width : 100%;
+    .article-intro {
+      height : 3em;
+    }
+  }
+  article {
+    margin-top : 1em;
+    .article-thumbnail {
+      padding-left : 0;
+      padding-right : 0;
+    }
+    p {
+      font-size : 1.1em;
+    }
+  }
+}
+
+@media screen and (min-device-width : 768px) {
+  .articles-grid {
+    article:first-child {
+      .article-intro {
+        height : 3em;
+      }
+    }
+    article {
+      margin-top : 1.5em;
+    }
+  }
+  .newest-article {
+    h1 {
+      font-size : 2.3em;
+    }
+    p {
+      font-size : 1.5em;
+    }
+  }
+}
+
+.card {
+//  padding : 10px;
+  .article-intro {
+    height : 6.6em;
+    overflow : hidden;
+  }
+  .article-title {
+    margin-top : 15px;
+  }
+  a:hover {
+    color : black;
+  }
+  a {
+    text-decoration: none;
+    color : #333;
+    p {
+      text-align : right;
+    }
+  }
+}
+
+.comments-count {
+  margin-top : 1em;
+  margin-bottom : 1em;
+  a:first-child {
+    margin-right : 10px;
+  }
+}
+

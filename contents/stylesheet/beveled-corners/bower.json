@@ -1,0 +1,27 @@
+{
+  "name": "beveled-corners",
+  "version": "0.2",
+  "homepage": "http://clubmate.fi/css-beveled-corners-take-2-a-sass-mixin/",
+  "authors": [
+    "Antti Hiljá"
+  ],
+  "description": "Make CSS beveled corners in similar fashion as border-radius",
+  "main": "beveled-corners.scss",
+  "keywords": [
+    "CSS",
+    "beveled-corners"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "index.html",
+    "component.json"
+  ],
+  "dependencies": {
+    "normalize.css": "~3.0.0"
+  }
+}

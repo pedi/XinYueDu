@@ -1,0 +1,102 @@
+@charset "UTF-8";
+html {
+  font-family: "Helvetica Neue", Helvetica, Arial, "fangZhenXiDengXian", "Microsoft Yahei", "微软雅黑", "WenQuanYi Micro Hei", "文泉驿微米黑", "WenQuanYi Zen Hei", "文泉驿正黑", "Hiragino Sans GB", sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: slimJoe, "fangZhenXiDengXian"; }
+
+article, section, span, li {
+  font-family: lato, "fangZhenXiDengXian"; }
+
+@font-face {
+  font-family: slimJoe;
+  src: url(../assets/fonts/SlimJoe.otf); }
+@font-face {
+  font-family: lato;
+  src: url(../assets/fonts/Lato-Light.ttf); }
+@font-face {
+  font-family: fangZhenXiDengXian;
+  src: url(../assets/fonts/FZXDX.ttf); }
+/**
+ * corner-bevel-veryold() mixin
+ *
+ * Bevels corners of an element, in similar fashion as border-radius.
+ * Compatable down to IE 8. Works like any other block level element (almost).
+ * 
+ * @author  Antti Hiljá http://clubmate.fi @hiljaa
+ * @version 0.2
+ * @link    http://clubmate.fi/css-beveled-corners-take-2-a-sass-mixin
+ * @link    http://github.com/hilja/beveled-corners
+ * 
+ */
+/**
+ * corner-bevel-old() mixin
+ *
+ * Bevels corners of an element, in similar fashion as border-radius.
+ * Compatable down to IE 8. Works like any other block level element (almost).
+ * 
+ * @author  Antti Hiljá http://clubmate.fi @hiljaa
+ * @version 0.2
+ * @link    http://clubmate.fi/css-beveled-corners-take-2-a-sass-mixin
+ * @link    http://github.com/hilja/beveled-corners
+ * 
+ */
+/**
+ * corner-bevel-veryold() mixin
+ *
+ * Bevels corners of an element, in similar fashion as border-radius.
+ * Compatable down to IE 8. Works like any other block level element (almost).
+ * 
+ * @author  Antti Hiljá http://clubmate.fi @hiljaa
+ * @version 0.2
+ * @link    http://clubmate.fi/css-beveled-corners-take-2-a-sass-mixin
+ * @link    http://github.com/hilja/beveled-corners
+ * 
+ */
+body {
+  background-color: #fcfcfc; }
+
+article {
+  font-size: 1.1em; }
+  article h1 {
+    font-size: 1.8em; }
+  article h2 {
+    font-size: 1.4em; }
+  article img.responsive {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em; }
+
+#top-logo {
+  height: 3em; }
+
+.card {
+  background-color: white;
+  box-shadow: 0 0 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
+
+.metabar {
+  z-index: 999;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  background-color: white;
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid #e4e4e4; }
+
+.metabar-margin {
+  margin-top: 3.5em; }
+
+a:hover {
+  text-decoration: none; }
+
+a {
+  color: black; }
+
+footer {
+  border-top: 1px solid #e4e4e4; }
+  footer h3 {
+    font-size: 1em; }
+  footer ul {
+    padding-left: 0px;
+    list-style: none; }
+
+/*# sourceMappingURL=style.css.map */

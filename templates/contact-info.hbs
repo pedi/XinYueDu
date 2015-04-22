@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    {{> head }}
+    <title>{{page.metadata.title}}</title>
+    <link rel="stylesheet" type="text/css" href="/stylesheet/article.css"/>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid navbar-wrapper">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/">
+                <img class="center-block" id="top-logo" src="/assets/images/logo.jpg"  alt="logo"/>
+            </a>
+        </div>
+    </div>
+</nav>
+<div class="metabar-margin">
+
+</div>
+
+<article>
+    <h1>{{page.metadata.title}}</h1>
+    <!--<div class="layout-full-width">-->
+    <!--<img class="img-responsive center-block full-page-image" src="assets/images/painter-with-literature-background.jpg" alt="Painer with literature background"/>-->
+    <!--<div class="clearfix"></div>-->
+    <!--</div>-->
+    {{report page.html}}
+    {{{page.html}}}
+</article>
+
+{{> footer }}
+{{> script }}
+</body>
+</html>

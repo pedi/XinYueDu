@@ -1,0 +1,43 @@
+.articles-grid article:first-child {
+  margin-top: 1em;
+  width: 100%; }
+  .articles-grid article:first-child .article-intro {
+    height: 3em; }
+.articles-grid article {
+  margin-top: 1em; }
+  .articles-grid article .article-thumbnail {
+    padding-left: 0;
+    padding-right: 0; }
+  .articles-grid article p {
+    font-size: 1.1em; }
+
+@media screen and (min-device-width: 768px) {
+  .articles-grid article:first-child .article-intro {
+    height: 3em; }
+  .articles-grid article {
+    margin-top: 1.5em; }
+
+  .newest-article h1 {
+    font-size: 2.3em; }
+  .newest-article p {
+    font-size: 1.5em; } }
+.card .article-intro {
+  height: 6.6em;
+  overflow: hidden; }
+.card .article-title {
+  margin-top: 15px; }
+.card a:hover {
+  color: black; }
+.card a {
+  text-decoration: none;
+  color: #333; }
+  .card a p {
+    text-align: right; }
+
+.comments-count {
+  margin-top: 1em;
+  margin-bottom: 1em; }
+  .comments-count a:first-child {
+    margin-right: 10px; }
+
+/*# sourceMappingURL=index.css.map */

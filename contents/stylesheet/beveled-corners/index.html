@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <!-- Meta -->
+        <meta charset="utf-8">
+        
+        <!-- Title -->
+        <title>CSS beveled corners demo</title>
+        
+        <!-- More meta -->
+        <meta name="description" content="CSS beveled corners demo">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Styles -->
+        <link rel="stylesheet" href="bower_components/normalize.css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <h1>Three different mixins to do beveled corner on any element</h1>
+
+        <div class="module--corner-bevel-new">
+            <p>
+                This <code>div</code> uses <code>corner-bevel-new()</code> mixin and it works on all browsers that support CSS gradients, that is to say: IE10. See the <a href="http://caniuse.com/#search=gradients">complete browser support table</a>. <a href="http://clubmate.fi/css-beveled-corners-take-2-a-sass-mixin">Read a blog post about the usage</a>.
+            </p>
+            <p>
+                Sapiente, doloribus, pariatur qui cum tempore minus quaerat nihil molestiae in doloremque ratione modi voluptas quasi quisquam voluptate deserunt sit dolore incidunt cumque accusantium totam ipsa enim. Excepturi, tempora, earum?
+            </p>
+            <p>
+                Atque, tempora, assumenda, alias doloribus a facere nihil architecto quae iste eos unde repellendus quam libero consectetur ea repudiandae porro quas explicabo quod voluptatem eveniet quis debitis odit ipsa nam?
+            </p>
+        </div>
+
+        <div class="module--corner-bevel-old">
+            <p>
+                 This <code>div</code> uses <code>corner-bevel-old()</code> mixin and it works on all browsers that support background clip, that is to say: IE9. See the <a href="http://caniuse.com/#search=clip">complete browser support table</a>. <a href="http://clubmate.fi/css-beveled-corners-take-2-a-sass-mixin">Read a blog post about the usage</a>.
+            </p> 
+            <p>
+                Sapiente, doloribus, pariatur qui cum tempore minus quaerat nihil molestiae in doloremque ratione modi voluptas quasi quisquam voluptate deserunt sit dolore incidunt cumque accusantium totam ipsa enim. Excepturi, tempora, earum?
+            </p>
+            <p>
+                Atque, tempora, assumenda, alias doloribus a facere nihil architecto quae iste eos unde repellendus quam libero consectetur ea repudiandae porro quas explicabo quod voluptatem eveniet quis debitis odit ipsa nam?
+            </p>
+        </div>
+
+        <div class="module--corner-bevel-veryold">
+            <p>
+                 This <code>div</code> uses <code>corner-bevel-veryold()</code> mixin and it works on all browsers that support CSS generated content, meaning the  <code>:before</code> and <code>:after</code> pseudo elements, that is to say: IE8. See the <a href="http://caniuse.com/#search=css%20generated%20content">complete browser support table</a>. <a href="http://clubmate.fi/css-beveled-corners-take-2-a-sass-mixin">Read a blog post about the usage</a>.
+            </p>
+            <p>
+                Sapiente, doloribus, pariatur qui cum tempore minus quaerat nihil molestiae in doloremque ratione modi voluptas quasi quisquam voluptate deserunt sit dolore incidunt cumque accusantium totam ipsa enim. Excepturi, tempora, earum?
+            </p>
+            <p>
+                Atque, tempora, assumenda, alias doloribus a facere nihil architecto quae iste eos unde repellendus quam libero consectetur ea repudiandae porro quas explicabo quod voluptatem eveniet quis debitis odit ipsa nam?
+            </p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "contents" : "./contents",
+  "plugins" : [
+    "./plugins/paginator.coffee",
+    "./node_modules/wintersmith-handlebars/wintersmith-handlebars.coffee",
+    "wintersmith-tag"
+  ],
+  "require": {
+    "moment": "moment",
+    "_": "underscore",
+    "typogr": "typogr"
+  },
+  "markdown": {
+    "smartLists": true,
+    "smartypants": true
+  },
+  "paginator": {
+    "perPage": 10,
+    "template" : "index.hbs"
+  }
+}

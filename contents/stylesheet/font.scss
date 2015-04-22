@@ -1,0 +1,31 @@
+html {
+  font-family: "Helvetica Neue", Helvetica, Arial,
+  "fangZhenXiDengXian",
+  "Microsoft Yahei", "微软雅黑",
+  "WenQuanYi Micro Hei", "文泉驿微米黑", "WenQuanYi Zen Hei", "文泉驿正黑",
+  "Hiragino Sans GB",
+  sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: slimJoe, "fangZhenXiDengXian";
+}
+
+article, section, span, li {
+  font-family: lato, "fangZhenXiDengXian";
+}
+
+@font-face {
+  font-family : slimJoe;
+  src : url(../assets/fonts/SlimJoe.otf);
+}
+
+@font-face {
+  font-family: lato;
+  src :url(../assets/fonts/Lato-Light.ttf);
+}
+
+@font-face {
+  font-family : fangZhenXiDengXian;
+  src : url(../assets/fonts/FZXDX.ttf);
+}

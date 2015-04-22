@@ -1,0 +1,11 @@
+.follow-wechat-link:hover:after {
+  content: url(/assets/images/-wechat-qr-code.jpg);
+  display: block;
+  position: absolute;
+  //left: 123px; /* change this value to one that suits you */
+  //top: 56px; /* change this value to one that suits you */
+}
+
+.follow-wechat-link:hover {
+  position : relative;
+}

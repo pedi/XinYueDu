@@ -1,0 +1,115 @@
+@import "font";
+@import "constants";
+//@import "footer";
+@import "beveled-corners/beveled-corners";
+
+.follow-wechat-link:hover:after {
+  content: url(/assets/images/wechat-qr-code.jpg);
+  display: block;
+  position: absolute;
+  //left: 123px; /* change this value to one that suits you */
+  //top: 56px; /* change this value to one that suits you */
+}
+
+.follow-wechat-link:hover {
+  position : relative;
+}
+
+$body-background-color: #f5f5f5;
+.body-wrapper {
+  padding-left : 15px;
+  padding-right : 15px;
+  max-width : 1170px;
+}
+
+.navbar-wrapper {
+  padding-left : 15px;
+  padding-right : 15px;
+  max-width : 700px;
+}
+
+body {
+  background-color : $body-background-color;
+}
+article {
+
+  font-size : 1.1em;
+  h1 {
+    font-size : 1.3em;
+  }
+  h2 {
+    font-size : 1.4em;
+  }
+  h3 {
+    font-size : 1.2em;
+  }
+  img.responsive {
+    margin-top : 0.5em;
+    margin-bottom : 0.5em;
+  }
+}
+
+#top-logo {
+  //height : 3em;
+  height : 100%;
+}
+
+.navbar-brand {
+  padding : 5px;
+}
+
+.card {
+  background-color : white;
+  box-shadow: 0 0 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+//.metabar {
+//  z-index : 999;
+//  width : 100%;
+//  position :  fixed;
+//  top : 0px;
+//  background-color : white;
+//  padding-bottom : 0.5em;
+//  border-bottom : 1px solid $division-line-color;
+//}
+
+.metabar-margin {
+  margin-top : 4em;
+}
+
+a:hover {
+  text-decoration: none;
+}
+a {
+  color : black;
+}
+
+footer {
+  border-top : 1px solid $division-line-color;
+
+  h3 {
+    font-size : 1em;
+  }
+  ul {
+    padding-left : 0px;
+    list-style : none;
+  }
+}
+
+@media (min-width: $single-column-width) {
+  //.navbar-header {
+  //  float: left;
+  //  padding: 15px;
+  //  text-align: center;
+  //  width: 100%;
+  //}
+  //.navbar-brand {float:none;}
+  //.navbar .navbar-nav {
+  //  display: inline-block;
+  //  float: none;
+  //  vertical-align: top;
+  //}
+  //.navbar .navbar-collapse {
+  //  text-align: center;
+  //}
+}

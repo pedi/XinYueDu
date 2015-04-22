@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    {{> head }}
+    <title>{{page.metadata.title}}</title>
+    <link rel="stylesheet" type="text/css" href="/stylesheet/article.css"/>
+</head>
+<body>
+{{> header}}
+<article>
+    <h1>{{page.metadata.title}}</h1>
+    <p class="date">
+        <small>{{date page.metadata.date}}</small>
+        &nbsp;
+        <small>
+            {{#if page.metadata.author}}
+                作者:{{page.metadata.author}}&nbsp;&nbsp;
+            {{/if}}
+            {{#if page.metadata.editor}}
+                编辑:{{page.metadata.editor}}&nbsp;&nbsp;
+            {{/if}}
+            {{#if page.metadata.interviewer}}
+                采访:{{page.metadata.interviewer}}&nbsp;&nbsp;
+            {{/if}}
+            {{#if page.metadata.photographer}}
+                摄影:{{page.metadata.photographer}}&nbsp;&nbsp;
+            {{/if}}
+            {{#if page.metadata.videographer}}
+                摄像:{{page.metadata.videographer}}&nbsp;&nbsp;
+            {{/if}}
+        </small>
+    </p>
+    <!--<div class="layout-full-width">-->
+        <!--<img class="img-responsive center-block full-page-image" src="assets/images/painter-with-literature-background.jpg" alt="Painer with literature background"/>-->
+        <!--<div class="clearfix"></div>-->
+    <!--</div>-->
+    {{{page.html}}}
+</article>
+
+<section class="author layout-single-column">
+    <img class="author-thumbnail img-circle pull-right" src="{{getAuthorAvatar contents page.metadata.author}}" alt=""/>
+    <p class="author-name center-block">{{page.metadata.author}}</p>
+    <p class="author-intro">{{getAuthorIntro contents page.metadata.author}}</p>
+    <p class="author-slogan"><em>{{getAuthorSlogan contents page.metadata.author}}</em></p>
+
+</section>
+<hr/>
+<!-- 多说评论框 start 测试 -->
+<a name="comments"></a>
+<section>
+    <div style="margin-bottom : 2em;" class="ds-share" data-thread-key="{{page.metadata.title}}" data-title="{{page.metadata.title}}" data-images="{{page.metadata.cover}}" data-content="{{page.intro}}" data-url="{{page.url}}">
+        <div class="ds-share-inline">
+            <ul  class="ds-share-icons-16">
+                <li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
+                <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
+                <li> <a class="ds-renren" href="javascript:void(0);" data-service="renren">人人网</a> </li>
+                <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
+                <li> <a class="ds-facebook" href="javascript:void(0);" data-service="facebook">Facebook</a> </li>
+                <li> <a class="ds-google" href="javascript:void(0);" data-service="google">谷歌</a> </li>
+            </ul>
+            <div class="ds-share-icons-more">
+            </div>
+        </div>
+    </div>
+    <div class="ds-thread " data-thread-key="{{page.metadata.title}}" data-title="{{page.metadata.title}}" data-url="{{page.url}}"></div>
+</section>
+<!-- 多说评论框 end -->
+
+{{> footer }}
+{{> script }}
+</body>
+</html>

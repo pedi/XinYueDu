@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta name="google-site-verification" content="oK-cIZmwFfuvuBs-S6ukXh07GlijUDTpcMj_Ybv08VU" />
+    {{> head }}
+    <title>新悦读</title>
+    <link rel="stylesheet" type="text/css" href="/stylesheet/index.css"/>
+</head>
+<body>
+{{> header}}
+
+<section class="body-wrapper container">
+
+    <section class="articles-grid">
+        {{#each articles}}
+            <article class="col-sm-6 col-md-4">
+                <div class="card">
+                    <div class="col-xs-12 article-thumbnail">
+                        <a target="_blank"  href="{{this.url}}"><img src="{{this.metadata.cover}}" class="img-responsive" alt=""/></a>
+                    </div>
+                    <div class="col-xs-12">
+                        <a target="_blank"  href="{{this.url}}"><h1 class="article-title"><b>{{this.title}}</b></h1></a>
+                        {{#if this.metadata.intro}}
+                        <div class="article-intro">{{{this.metadata.intro}}}</div>
+                        {{else}}
+                        <div class="article-intro">{{{this.intro}}}</div>
+                        {{/if}}
+                    </div>
+
+                    <div class="col-xs-12 comments-count" data-thread-key="{{this.metadata.title}}">
+                        <a target="_blank" href="{{this.url}}#comments">
+                                <i class="fa fa-heart-o fa-fw"></i><span class="likes-count-span"></span>
+                        </a>
+
+                        <a target="_blank" href="{{this.url}}#comments">
+                            <i class="fa fa-comment-o fa-fw"></i><span class="comments-count-span"></span>
+                        </a>
+                        <a target="_blank" class="pull-right" href="{{this.url}}"><p>更多>></p></a>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </article>
+        {{/each}}
+    </section>
+    <div class="clearfix"></div>
+    <div style="text-align:center">
+        <ul class="pagination">
+
+            {{#if prevPage}}
+                <li><a href="{{prevPage.url}}">前一页</a></li>
+            {{/if}}
+            {{#if nextPage}}
+                <li><a href="{{nextPage.url}}">下一页</a></li>
+            {{/if}}
+        </ul>
+    </div>
+
+</section>
+{{> footer }}
+{{> script }}
+<script type="text/javascript" src="/script/index.js"></script>
+</body>
+</html>

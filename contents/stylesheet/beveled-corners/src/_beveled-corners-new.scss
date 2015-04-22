@@ -1,0 +1,46 @@
+/**
+ * corner-bevel-veryold() mixin
+ *
+ * Bevels corners of an element, in similar fashion as border-radius.
+ * Compatable down to IE 8. Works like any other block level element (almost).
+ * 
+ * @author  Antti Hiljá http://clubmate.fi @hiljaa
+ * @version 0.2
+ * @link    http://clubmate.fi/css-beveled-corners-take-2-a-sass-mixin
+ * @link    http://github.com/hilja/beveled-corners
+ * 
+ */
+
+@mixin corner-bevel-new (
+    $background-color: #aaa,
+    $corner-top-left-bevel: 10px,
+    $corner-top-right-bevel: 10px,
+    $corner-bottom-right-bevel: 10px,
+    $corner-bottom-left-bevel: 10px
+    ) {
+    background: #{$background-color}; // Fallback
+    background: -webkit-linear-gradient(135deg, transparent $corner-top-left-bevel, $background-color $corner-top-left-bevel),
+                -webkit-linear-gradient(225deg, transparent $corner-top-right-bevel, $background-color $corner-top-right-bevel), 
+                -webkit-linear-gradient(315deg, transparent $corner-bottom-right-bevel, $background-color $corner-bottom-right-bevel),
+                -webkit-linear-gradient(45deg, transparent  $corner-bottom-left-bevel, $background-color $corner-bottom-left-bevel);
+    background: -moz-linear-gradient(135deg, transparent $corner-top-left-bevel, $background-color $corner-top-left-bevel),
+                -moz-linear-gradient(225deg, transparent $corner-top-right-bevel, $background-color $corner-top-right-bevel),
+                -moz-linear-gradient(315deg, transparent $corner-bottom-right-bevel, $background-color $corner-bottom-right-bevel),
+                -moz-linear-gradient(45deg, transparent  $corner-bottom-left-bevel, $background-color $corner-bottom-left-bevel);
+    background: -o-linear-gradient(135deg, transparent $corner-top-left-bevel, $background-color $corner-top-left-bevel),
+                -o-linear-gradient(225deg, transparent $corner-top-right-bevel, $background-color $corner-top-right-bevel),
+                -o-linear-gradient(315deg, transparent $corner-bottom-right-bevel, $background-color $corner-bottom-right-bevel),
+                -o-linear-gradient(45deg, transparent  $corner-bottom-left-bevel, $background-color $corner-bottom-left-bevel);
+    background: linear-gradient(135deg, transparent $corner-top-left-bevel, $background-color $corner-top-left-bevel),
+                linear-gradient(225deg, transparent $corner-top-right-bevel, $background-color $corner-top-right-bevel),
+                linear-gradient(315deg, transparent $corner-bottom-right-bevel, $background-color $corner-bottom-right-bevel),
+                linear-gradient(45deg, transparent  $corner-bottom-left-bevel, $background-color $corner-bottom-left-bevel);
+    background-position:
+        top left,
+        top right,
+        bottom right,
+        bottom left;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+    @content;
+}

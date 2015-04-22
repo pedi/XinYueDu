@@ -1,0 +1,22 @@
+@import "constants";
+body {
+  background-color : white;
+}
+.author-thumbnail {
+  float : left;
+  border-radius : 50%;
+  width : 50px;
+  margin-right : 1em;
+}
+.article-thumbnail {
+  width : 120px;
+}
+
+.container {
+  max-width : $single-column-width;
+}
+
+.article-list article {
+  margin-bottom : 2em;
+  border-bottom : 1px solid $division-line-color;
+}
